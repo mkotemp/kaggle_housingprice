@@ -42,4 +42,12 @@ I have currently just two types of models that I am trying - a decision tree, an
 \
 I see that overallQual is highly correlated to other predictive fields. The decision tree/random forest format should basically\
 take care of interactions, but I would need to address if I build linear regression model.\
+\
+I am not quite sure what to do with the quality fields - the one that are scored as excellent, good, TA, fair, poor. Mostly TA\
+is populated for these. the others aren\'92t too well populated, and thus if i use in a model on the train dataset, but the category\
+is not present in the validation or test datasets, the model won\'92t work there.  \
+I was thinking of combining excellent and good, and fair and poor, as two groups (rather than the separate 4). Still not sure how\
+much that might help.\
+\
+Some other fields are not well populated as well. I added some adjustments to eliminate those categories.\
 }
