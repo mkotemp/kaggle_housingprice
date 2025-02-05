@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww14120\viewh11360\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Notes on week 1 of DataPhilly home sales price Kaggle Project:\
+\
+I hit a lot of things that slowed me down/stalled\
+1. started with local jupyter notebook, but then switched to kaggle\
+	a. trouble on kaggle with it being slow, I wasn\'92t able to show all output, and I couldn\'92t print to my printer\
+\
+	b. editor loading\'85.i seemed to be stuck on that when it was opening a notebook in kaggle\
+2.I  had trouble with local jupyter lab, in trying to edit a notebook. it wouldn\'92t allow any edits - i think it had\
+to do with having more than one local notebooks open at a time.\
+Also, I was finding some python libraries that previously worked on local jupyter weren\'92t available anymore. I chalked that up to installing some libraries manually (outside of anaconda) and subsequently uninstalled, and now when I try to install some libraries again they are showing as already installed, but are not available to my jupyter notebook.\
+\
+\
+Thus, I switched over to google colab. I have had decent performance there.\
+\
+\
+\
+This project reminded me of a normal statistical modeling project. It involves about 80 variables that require feature engineering. Working on that slowed me down/a little overwhelming, just in how to accomplish in python (I have many years of experience with SAS software, where coding is automatic for me).\
+\
+I created dummies, and tried to highlight just those categories that were well populated and were discriminating in predictive.\
+I created sweetviz reports to help me visualize this.\
+\
+For some numeric/continuous fields, I tried three different transformations:\
+1. capped version\
+2. grouped version -\
+3. ranked version\
+\
+I have added dummies for year sold, and from my experience this should be predictive, and I can see that I have improvement\
+in my kaggle submission, but would have expected more.\
+\
+I should probably think about interaction fields that I could create - somehow capturing best properties and a specific year sold.\
+\
+I know I have redundancy in my dummies - i should eliminate this. \
+\
+I have currently just two types of models that I am trying - a decision tree, and a random forest. I should add in a linear regression in a traditional machine learning way, with  \
+\
+I see that overallQual is highly correlated to other predictive fields. The decision tree/random forest format should basically\
+take care of interactions, but I would need to address if I build linear regression model.\
+}
